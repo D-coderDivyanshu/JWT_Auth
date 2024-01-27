@@ -1,0 +1,20 @@
+GET http://localhost:5000/posts HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1hbiIsImlhdCI6MTcwNjM1ODkwNSwiZXhwIjoxNzA2MzU4OTI1fQ.B4rBiGAIJyz3wFtTogSpy65gwloGDD6FBVDO127lVlg
+###
+
+POST http://localhost:8000/token HTTP/1.1
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1hbiIsImlhdCI6MTcwNjM1ODg0Mn0.i4zws_6WEn9YDbqPsRoYvgZwGRSa4Tj-Zo1GHnL2Wq8"
+}
+###
+
+POST http://localhost:8000/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Aman"
+}
+
+###
