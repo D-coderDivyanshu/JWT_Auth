@@ -6,9 +6,19 @@ POST http://localhost:8000/token HTTP/1.1
 Content-Type: application/json
 
 {
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1hbiIsImlhdCI6MTcwNjM1ODg0Mn0.i4zws_6WEn9YDbqPsRoYvgZwGRSa4Tj-Zo1GHnL2Wq8"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1hbiIsImlhdCI6MTcwNjM2MTA3OH0.-8ov-jsgDRPkjtVr1vxJ9G_sKprYhaeJYdxfH0jb354"
 }
 ###
+
+DELETE http://localhost:8000/logout HTTP/1.1
+Content-Type: 
+
+{
+    "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiQW1hbiIsImlhdCI6MTcwNjM1ODg0Mn0.i4zws_6WEn9YDbqPsRoYvgZwGRSa4Tj-Zo1GHnL2Wq8"
+}
+
+###
+
 
 POST http://localhost:8000/login HTTP/1.1
 Content-Type: application/json
